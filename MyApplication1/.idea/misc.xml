@@ -3,11 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/MyApplication1/app/src/main/res/drawable/buttonstyleithgradient.xml" value="0.1425" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/MyApplication1/app/src/main/res/drawable/gradientbackground.xml" value="0.184" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/MyApplication1/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.184" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/MyApplication1/app/src/main/res/drawable/ic_baseline_forum_24.xml" value="0.1425" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/MyApplication1/app/src/main/res/drawable/ic_baseline_person_add_24.xml" value="0.1425" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/MyApplication1/app/src/main/res/drawable/ic_baseline_phone_android_24.xml" value="0.1425" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/MyApplication1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1425" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/MyApplication1/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/MyApplication1/app/src/main/res/layout/activity_login2.xml" value="0.25" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/MyApplication1/app/src/main/res/layout/activity_login_main.xml" value="0.25" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/MyApplication1/app/src/main/res/layout/activity_login_main_chung.xml" value="0.22" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/MyApplication1/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/MyApplication1/app/src/main/res/layout/activity_profile_name.xml" value="0.22" />
       </map>
     </option>
   </component>
