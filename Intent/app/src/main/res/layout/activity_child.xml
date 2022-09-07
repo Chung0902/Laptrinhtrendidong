@@ -6,6 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".Child">
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MSV:2050531200113"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="538dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nguyễn Thị Chung"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="424dp" />
+
     <LinearLayout
         android:layout_width="412dp"
         android:layout_height="242dp"
