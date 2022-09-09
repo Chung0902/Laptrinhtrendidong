@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nen1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="410dp"
+        android:layout_height="78dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="95dp">
+
+        <EditText
+            android:id="@+id/editTextTen"
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:layout_weight="1"
+
+            android:ems="10"
+            android:hint="Nhập môn học"
+            android:inputType="textPersonName"
+            android:textColor="#F5FFFFFF"
+            android:textColorHint="#F5FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="560dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonThem"
+                android:layout_width="158dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Thêm"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonCapNhat"
+                android:layout_width="wrap_content"
+                android:layout_height="76dp"
+                android:layout_weight="1"
+                android:text="Cập nhật"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listviewMonHoc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#F3FFFFFF"
+                android:clipToPadding="false"
+                android:textFilterEnabled="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
