@@ -45,7 +45,7 @@ public class MainActivity<adapter> extends AppCompatActivity {
         lvDienThoai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, DetailActivity.class);
+               Intent intent = new Intent(MainActivity.this, DetailActivity.class);
                 startActivity(intent);
             }
         });
@@ -113,8 +113,8 @@ public class MainActivity<adapter> extends AppCompatActivity {
         lvDienThoai = (ListView) findViewById(R.id.listviewDienThoai);
         arrayDienThoai = new ArrayList<>();
 
-        arrayDienThoai.add(new DienThoai("Iphone", "Iphone 12 Promax", R.drawable.iphone12promax));
-        arrayDienThoai.add(new DienThoai("Oppo", "Oppo reno 3", R.drawable.opporeno3));
+        arrayDienThoai.add(new DienThoai("Iphone__Nguyễn Thị Chung", "Iphone 12 Promax", R.drawable.iphone12promax));
+        arrayDienThoai.add(new DienThoai("Oppo__MSV:2050531200113 ", "Oppo reno 3", R.drawable.opporeno3));
         arrayDienThoai.add(new DienThoai("Samsung", "Samsung galaxy a32", R.drawable.samsunggalaxya32));
         arrayDienThoai.add(new DienThoai("Xiaomi", "Xiaomi mi 9", R.drawable.xiaomimi9));
         arrayDienThoai.add(new DienThoai("Redmi", "Redmi note 10", R.drawable.xiaomiredminote10));
