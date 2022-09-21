@@ -1,10 +1,14 @@
 package com.example.listview_nangcao;
 
-import android.content.Context;
+import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.List;
+import android.os.Bundle;
 
-public class DetailActivity {
-    public DetailActivity(Context applicationContext, int simple_list_item_1, List<String> list) {
+public class DetailActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_detail);
     }
 }

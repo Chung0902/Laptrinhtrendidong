@@ -41,31 +41,37 @@ public class MainActivity<adapter> extends AppCompatActivity {
         lvDienThoai.setAdapter(adapter);
 
 
-        lvDienThoai = (ListView) findViewById(R.id.listviewDienThoai);
-        lvDienThoai.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-               Intent intent = new Intent(MainActivity.this, DetailActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
+        //lvDienThoai = (ListView) findViewById(R.id.listviewDienThoai);
+        //lvDienThoai.setOnClickListener(new View.OnClickListener() {
+            //@Override
+            //public void onClick(View view) {
+               //doOpenMainActivity2();
+            //}
+        //});
 
         lvDienThoai.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MainActivity.this, arrayDienThoai.get(i) + " Vị trí " + i, Toast.LENGTH_SHORT).show();
+                doOpenMainActivity2();
             }
         });
 
-        lvDienThoai.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                edtTen.setText((CharSequence) arrayDienThoai.get(i));
-                vitri = i;
-            }
-        });
+
+
+       // lvDienThoai.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+           // @Override
+           // public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+             //   Toast.makeText(MainActivity.this, arrayDienThoai.get(i) + " Vị trí " + i, Toast.LENGTH_SHORT).show();
+           // }
+        //});
+
+        //lvDienThoai.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+           // @Override
+            //public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                //edtTen.setText((CharSequence) arrayDienThoai.get(i));
+               // vitri = i;
+           // }
+       // });
 
 
         lvDienThoai.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
@@ -77,9 +83,8 @@ public class MainActivity<adapter> extends AppCompatActivity {
             }
         });
 
-
-
     }
+
 
     private void XacNhanXoa(final int position){
 
@@ -107,7 +112,12 @@ public class MainActivity<adapter> extends AppCompatActivity {
         alerDiaLog.show();
     }
 
-
+    public void doOpenMainActivity2()
+    {
+        Intent myIntent;
+        myIntent = new Intent( this, DetailActivity.class);
+        startActivity(myIntent);
+    }
 
     private void AnhXa(){
         lvDienThoai = (ListView) findViewById(R.id.listviewDienThoai);
