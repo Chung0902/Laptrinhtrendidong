@@ -2,6 +2,7 @@ package com.example.bt_listview;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -65,6 +66,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
+        lvMonHoc.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+                doOpenMainActivity2();
+                Toast.makeText(MainActivity.this,mangMonHoc.get(i),Toast.LENGTH_SHORT).show();
+
+                return false;
+            }
+        });
+
         bntThem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -93,18 +106,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        lvMonHoc.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MainActivity.this, " Đã vừa xóa " + mangMonHoc.get(i), Toast.LENGTH_SHORT).show();
+        //lvMonHoc.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+           // @Override
+            //public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+               // Toast.makeText(MainActivity.this, " Đã vừa xóa " + mangMonHoc.get(i), Toast.LENGTH_SHORT).show();
 
-                mangMonHoc.remove(i);
-                adapter.notifyDataSetChanged();
+                //mangMonHoc.remove(i);
+               // adapter.notifyDataSetChanged();
 
 
-                return false;
-            }
-        });
+               // return false;
+           // }
+       // });
 
     }
+
+    public void doOpenMainActivity2()
+    {
+        Intent myIntent;
+        myIntent = new Intent( this, MainActivity2.class);
+        startActivity(myIntent);
+    }
+
+
 }
