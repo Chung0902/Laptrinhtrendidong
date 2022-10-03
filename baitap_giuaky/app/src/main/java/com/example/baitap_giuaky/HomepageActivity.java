@@ -15,6 +15,8 @@ public class HomepageActivity extends AppCompatActivity {
 
     private Button bntListview;
 
+    private Button btnCancle;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +48,16 @@ public class HomepageActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(HomepageActivity.this, ListViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnCancle = (Button) findViewById(R.id.bntcancel);
+
+        btnCancle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomepageActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
