@@ -109,35 +109,45 @@ public class HomepageActivity extends AppCompatActivity {
                     }
                     case R.id.nav_list:
                     {
-                        //Toast.makeText(HomepageActivity.this, "List Selected", Toast.LENGTH_SHORT).show();
-                        Log.i("ListViewActivity", "Home Selected");
+                        doOpenlistview();
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
                     }
                     case R.id.nav_profile:
                     {
-                        //Toast.makeText(HomepageActivity.this, "Profile Selected", Toast.LENGTH_SHORT).show();
-                        Log.i("ProfileActivity", "Home Selected");
+                        doOpenprofile();
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
                     }
                     case R.id.nav_logout:
                     {
-                        //Toast.makeText(HomepageActivity.this, "Logout Selected", Toast.LENGTH_SHORT).show();
-                        Log.i("MainActivity", "Home Selected");
+                        doOpenmain();
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
                     }
 
-
-                    //default:
-                       // throw new IllegalStateException("Unexpected value: " + item.getItemId());
                 }
                 return false;
             }
         });
 
     }
+
+    private void doOpenprofile(){
+        Intent intent = new Intent(this, ProfileActivity.class);
+        startActivity(intent);
+    }
+
+    private void doOpenlistview(){
+        Intent intent = new Intent(this, ListViewActivity.class);
+        startActivity(intent);
+    }
+    
+    private void doOpenmain(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
 
     @Override
     public void onBackPressed() {
