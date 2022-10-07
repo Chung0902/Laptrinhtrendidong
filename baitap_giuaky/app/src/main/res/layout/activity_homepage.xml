@@ -1,102 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomepageActivity">
+    android:id="@+id/drawer_layout"
+    tools:context=".HomepageActivity"
+    tools:openDrawer="start">
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="412dp"
-        android:layout_height="217dp"
-        android:background="@drawable/homepage3"
-        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="423dp"
+            android:layout_height="789dp"
+            android:background="@color/white"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="412dp"
+                android:layout_height="217dp"
+                android:background="@drawable/homepage3"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/bntLoginn"
+                android:layout_width="318dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/button_bg"
+                android:backgroundTint="#03A9F4"
+                android:fontFamily="@font/nabila"
+                android:text="LOGIN"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintHorizontal_bias="0.622"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bntListview"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/bntListview"
+                android:layout_width="318dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/button_bg"
+                android:backgroundTint="#03A9F4"
+                android:fontFamily="@font/nabila"
+                android:text="LISTVIEW"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.622"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bntProfile"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/bntProfile"
+                android:layout_width="318dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/button_bg"
+                android:backgroundTint="#03A9F4"
+                android:fontFamily="@font/nabila"
+                android:text="PROFILE"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.621"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/bntcancel"
+                android:layout_width="316dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/button_bg"
+                android:backgroundTint="#03A9F4"
+                android:fontFamily="@font/nabila"
+                android:text="CANCEL"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.767"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bntLoginn"
+                tools:ignore="MissingConstraints" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="358dp">
 
 
-    <Button
-        android:id="@+id/bntProfile"
-        android:layout_width="318dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/button_bg"
-        android:backgroundTint="@color/purple_500"
-        android:fontFamily="@font/nabila"
-        android:text="PROFILE"
-        android:textColor="@color/white"
-        android:textColorHint="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.621"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        tools:ignore="MissingConstraints" />
+        </FrameLayout>
 
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/bntListview"
-        android:layout_width="318dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/button_bg"
-        android:backgroundTint="@color/purple_500"
-        android:fontFamily="@font/nabila"
-        android:text="LISTVIEW"
-        android:textColor="@color/white"
-        android:textColorHint="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.622"
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationView"
+        app:headerLayout="@layout/header_menu"
+        app:menu="@menu/menu"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"
+        tools:ignore="MissingConstraints">
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bntProfile"
-        tools:ignore="MissingConstraints" />
+    </com.google.android.material.navigation.NavigationView>
 
-
-    <Button
-        android:id="@+id/bntLoginn"
-        android:layout_width="318dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/button_bg"
-        android:backgroundTint="@color/purple_500"
-        android:fontFamily="@font/nabila"
-        android:text="LOGIN"
-        android:textColor="@color/white"
-        android:textColorHint="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintHorizontal_bias="0.622"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bntListview"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/bntcancel"
-        android:layout_width="318dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/button_bg"
-        android:backgroundTint="@color/purple_500"
-        android:fontFamily="@font/nabila"
-        android:text="CANCEL"
-        android:textColor="@color/white"
-        android:textColorHint="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.767"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bntLoginn"
-        tools:ignore="MissingConstraints" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

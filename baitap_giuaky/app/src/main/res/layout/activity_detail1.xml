@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailActivity">
+    tools:context=".DetailActivity_1">
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="IPHONE 12 PROMAX - 64GB256GB"
+        android:text="OPPO RENO 3"
         android:textColor="#F44336"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -29,7 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:srcCompat="@drawable/iphone12promax" />
+        app:srcCompat="@drawable/opporeno3" />
 
     <TextView
         android:id="@+id/textView5"
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
-        android:text="Dòng máy này sẽ có kết cấu gồm khung thép không gỉ; mặt lưng bằng kính"
+        android:text="Video chống rung 2.0 siêu ổn định và xóa phông chuyên nghiệp"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text="Bộ xử lý A14 Bionic vô cùng mạnh mẽ, RAM 6 GB"
+        android:text="Camera selfie 44 MP chuyên gia chụp đêm cực kì sắc nét"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text="Cùng với đó là bộ nhớ lưu trữ từ 128 GB, 256 GB đến 512 GB"
+        android:text="Camera sau zoom đến 20x bắt trọn chi tiết khoảng cách gần xa"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
@@ -68,11 +68,13 @@
         android:id="@+id/textView8"
         android:layout_width="393dp"
         android:layout_height="48dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="10dp"
-        android:text="Vì kích thước có phần to hơn nên viên pin chắc chắn sẽ có dung lượng lớn hơn."
+        android:text="Sạc nhanh VOOC 3.0 đạt 50% chỉ trong thời gian 30 phút"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button1"
@@ -84,4 +86,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,6 +24,7 @@ public class DienThoaiAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
+
         return dienThoaiList.size();//trả về tất cả các đòn điện thoại
     }
 
@@ -34,6 +35,7 @@ public class DienThoaiAdapter extends BaseAdapter {
 
     @Override
     public long getItemId(int i) {
+
         return 0;
     }
 

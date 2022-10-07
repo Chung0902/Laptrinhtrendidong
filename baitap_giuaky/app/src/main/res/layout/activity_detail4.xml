@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailActivity">
+    tools:context=".DetailActivity_4">
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="IPHONE 12 PROMAX - 64GB256GB"
+        android:layout_marginTop="30dp"
+        android:text="REDMI NOTE 10"
         android:textColor="#F44336"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -29,15 +29,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:srcCompat="@drawable/iphone12promax" />
+        app:srcCompat="@drawable/xiaomiredminote10" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:text="Dòng máy này sẽ có kết cấu gồm khung thép không gỉ; mặt lưng bằng kính"
+        android:layout_marginTop="24dp"
+        android:text="Thiết kế đẹp mắt, sang trọng đến từng chi tiết"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
@@ -48,18 +48,18 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text="Bộ xử lý A14 Bionic vô cùng mạnh mẽ, RAM 6 GB"
+        android:text="Màn hình siêu lớn, trải nghiệm hoàn hảo"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="249dp"
+        android:layout_height="32dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text="Cùng với đó là bộ nhớ lưu trữ từ 128 GB, 256 GB đến 512 GB"
+        android:text="Hiệu năng mượt mà với chip rồng Snapdragon"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
@@ -68,11 +68,13 @@
         android:id="@+id/textView8"
         android:layout_width="393dp"
         android:layout_height="48dp"
-        android:layout_marginTop="10dp"
-        android:text="Vì kích thước có phần to hơn nên viên pin chắc chắn sẽ có dung lượng lớn hơn."
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp"
+        android:text="Bộ bốn camera siêu nét, bắt trọn mọi khoảnh khắc"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button1"
@@ -84,4 +86,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
