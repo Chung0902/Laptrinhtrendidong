@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailActivity">
+    tools:context=".DetailActivity_2">
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="IPHONE 12 PROMAX - 64GB256GB"
+        android:text="SAMSUNG GALAXY A32"
         android:textColor="#F44336"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -29,7 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:srcCompat="@drawable/iphone12promax" />
+        app:srcCompat="@drawable/samsunggalaxya32" />
 
     <TextView
         android:id="@+id/textView5"
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
-        android:text="Dòng máy này sẽ có kết cấu gồm khung thép không gỉ; mặt lưng bằng kính"
+        android:text="Sở hữu màn hình 90Hz, 4 camera 64MP, pin dung lượng 5000 mAh"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
@@ -48,18 +48,18 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text="Bộ xử lý A14 Bionic vô cùng mạnh mẽ, RAM 6 GB"
+        android:text="Camera góc siêu rộng, cảm nhận cuộc sống với khung hình rộng hơn"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="272dp"
+        android:layout_height="47dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text="Cùng với đó là bộ nhớ lưu trữ từ 128 GB, 256 GB đến 512 GB"
+        android:text="Chụp ảnh xóa phông chuyên nghiệp"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
@@ -68,20 +68,24 @@
         android:id="@+id/textView8"
         android:layout_width="393dp"
         android:layout_height="48dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text="Vì kích thước có phần to hơn nên viên pin chắc chắn sẽ có dung lượng lớn hơn."
+        android:text="Trải nghiệm sự khác biệt của màn hình cao cấp"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="68dp"
         android:text="Trở về"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

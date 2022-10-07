@@ -36,7 +36,31 @@ public class ListViewActivity extends AppCompatActivity {
         lvDienThoai.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                doOpenMainActivity2();
+                if(i==0){
+                    Intent intent = new Intent();
+                    intent.setClass(ListViewActivity.this, DetailActivity.class);
+                    startActivity(intent);
+                }
+                if(i==1){
+                    Intent intent = new Intent();
+                    intent.setClass(ListViewActivity.this, DetailActivity_1.class);
+                    startActivity(intent);
+                }
+                if(i==2){
+                    Intent intent = new Intent();
+                    intent.setClass(ListViewActivity.this, DetailActivity_2.class);
+                    startActivity(intent);
+                }
+                if(i==3){
+                    Intent intent = new Intent();
+                    intent.setClass(ListViewActivity.this, DetailActivity_3.class);
+                    startActivity(intent);
+                }
+                if(i==4){
+                    Intent intent = new Intent();
+                    intent.setClass(ListViewActivity.this, DetailActivity_4.class);
+                    startActivity(intent);
+                }
             }
         });
 
@@ -89,12 +113,12 @@ public class ListViewActivity extends AppCompatActivity {
         alerDiaLog.show();
     }
 
-    public void doOpenMainActivity2()
+    /*public void doOpenMainActivity2()
     {
         Intent myIntent;
         myIntent = new Intent( this, DetailActivity.class);
         startActivity(myIntent);
-    }
+    }*/
 
     private void AnhXa(){
         lvDienThoai = (ListView) findViewById(R.id.listviewDienThoai);

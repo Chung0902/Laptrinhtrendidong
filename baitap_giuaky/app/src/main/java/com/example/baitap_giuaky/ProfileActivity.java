@@ -16,7 +16,7 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        bntcomebach = (Button) findViewById(R.id.buttoncomeback);
+        bntcomebach = (Button) findViewById(R.id.buttonlogout);
 
         bntcomebach.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,6 +25,7 @@ public class ProfileActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
     }
 }

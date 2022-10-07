@@ -8,12 +8,12 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class DetailActivity extends AppCompatActivity {
+public class DetailActivity_3 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail);
+        setContentView(R.layout.activity_detail3);
 
         TextView textView = findViewById(R.id.textView4);
         ImageView imageView = findViewById(R.id.imageView7);
@@ -29,7 +29,6 @@ public class DetailActivity extends AppCompatActivity {
                 finish();
             }
         });
-
 
     }
 }

@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".ProfileActivity">
 
+
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="150dp"
@@ -30,7 +32,7 @@
             android:layout_height="74dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="40dp"
-            android:text="NGUYỄN THỊ CHUNG"
+            android:text="Nguyễn Thị Chung"
             android:textColor="@color/white"
             android:textSize="24dp"
             android:textStyle="bold" />
@@ -90,13 +92,13 @@
             android:orientation="vertical">
 
             <EditText
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginTop="45dp"
-            android:text="Tên: Nguyễn Thị Chung"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:fontFamily="@font/nabila"/>
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="45dp"
+                android:text="Tên: Nguyễn Thị Chung"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/nabila"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -120,7 +122,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginTop="20dp"
-                android:text="Môn: Lập trình TDTDD"
+                android:text="Môn: Lập trình TDTDT"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:fontFamily="@font/nabila"/>
@@ -128,7 +130,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/buttoncomeback"
+            android:id="@+id/buttonlogout"
             android:layout_width="226dp"
             android:layout_height="62dp"
             android:layout_marginTop="10dp"
@@ -137,7 +139,8 @@
             android:textStyle="bold"
             android:fontFamily="@font/abc"
             android:background="@drawable/input_bg"
-            android:text="Come Back" />
+            android:text="Trở về" />
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
