@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void btnGetContactPressed(View v){
 
+        getPhoneContacts();
+
     }
 
     private void getPhoneContacts(){
@@ -41,13 +43,13 @@ public class MainActivity extends AppCompatActivity {
         ContentResolver contentResolver = getContentResolver();
         Uri uri = ContactsContract.CommonDataKinds.Phone.CONTENT_URI;
         Cursor cursor = contentResolver.query(uri, null, null, null,null);
-        Log.i("CER_DEMONIAC_PROVID", "TOTAL # of Contacts !!!" + Integer.toString(cursor.getCount()));
+        Log.i("CONTACT_PROVIGER_DEMO", "TOTAL # of Contacts !!!" + Integer.toString(cursor.getCount()));
         if(cursor.getCount() > 0){
-            while (cursor.getCount() > 0){
+            while (cursor.moveToNext()){
                 @SuppressLint("Range") String contactName = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
                 @SuppressLint("Range") String contactNumber = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
 
-                Log.i("CONTACT PROVIGER DEMO", "Contact Name  !!! " + contactName + "  Ph #   !!! " + contactNumber);
+                Log.i("CONTACT_PROVIGER_DEMO", "Contact Name  !!! " + contactName + "  Ph #   !!! " + contactNumber);
 
             }
         }
