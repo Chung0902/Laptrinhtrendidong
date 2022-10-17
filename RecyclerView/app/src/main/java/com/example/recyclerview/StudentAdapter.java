@@ -33,8 +33,8 @@ public class StudentAdapter extends RecyclerView.Adapter {
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         Student student = (Student) mStudents.get(position);
 
-        holder.mName.setText(student.getmName());
-        holder.birthYear.setText(student.getBirthYear()+"");
+        holder.studentname.setText(student.getmName());
+        holder.birthyear.setText(student.getBirthYear()+"");
 
     }
 
