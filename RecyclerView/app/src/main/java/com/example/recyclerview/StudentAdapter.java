@@ -25,13 +25,7 @@ public class StudentAdapter extends RecyclerView.Adapter {
         LayoutInflater inflater = LayoutInflater.from(context);
 
         View studentView = inflater.inflate(R.layout.student_item, parent, false);
-
-        RecyclerView.ViewHolder viewHolder = new RecyclerView.ViewHolder(studentView) {
-            @Override
-            public String toString() {
-                return super.toString();
-            }
-        };
+        ViewHolder viewHolder = new ViewHolder(studentView);
         return viewHolder;
     }
 
@@ -39,9 +33,8 @@ public class StudentAdapter extends RecyclerView.Adapter {
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         Student student = (Student) mStudents.get(position);
 
-        holder.studentname.setText(student.getmName());
+        holder.mName.setText(student.getmName());
         holder.birthYear.setText(student.getBirthYear()+"");
-
 
     }
 
