@@ -142,7 +142,7 @@ public class HomepageActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ListViewActivity.class);
         startActivity(intent);
     }
-    
+
     private void doOpenmain(){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
