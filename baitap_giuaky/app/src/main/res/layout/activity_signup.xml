@@ -55,31 +55,6 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
         tools:ignore="DuplicateIds,MissingConstraints" />
 
-    <EditText
-        android:id="@+id/editTexEmail"
-        android:layout_width="331dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/input1_bg"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
-        android:textColor="@color/black"
-        android:textColorHighlight="@color/teal_700"
-        android:textColorHint="@color/black"
-        android:textColorLink="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextUsername"
-        tools:ignore="DuplicateIds,MissingConstraints"
-        android:fontFamily="@font/nabila"/>
 
     <EditText
         android:id="@+id/editTexPass"
@@ -104,7 +79,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:fontFamily="@font/nabila"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTexEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername"
         tools:ignore="DuplicateIds,MissingConstraints" />
 
     <EditText
