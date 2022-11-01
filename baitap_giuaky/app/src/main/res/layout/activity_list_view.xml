@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/nenxanh1"
-    tools:context=".ListViewActivity">
+    tools:context=".activity.ListViewActivity">
 
     <ListView
         android:id="@+id/listviewDienThoai"

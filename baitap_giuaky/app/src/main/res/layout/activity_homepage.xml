@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
-    tools:context=".HomepageActivity"
+    tools:context=".activity.HomepageActivity"
     tools:openDrawer="start">
 
     <LinearLayout
@@ -29,7 +29,7 @@
             <Button
                 android:id="@+id/bntLoginn"
                 android:layout_width="318dp"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="20dp"
@@ -39,7 +39,7 @@
                 android:text="LOGIN"
                 android:textColor="@color/white"
                 android:textColorHint="@color/black"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
 
                 app:layout_constraintHorizontal_bias="0.622"
@@ -51,7 +51,7 @@
             <Button
                 android:id="@+id/bntListview"
                 android:layout_width="318dp"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="20dp"
@@ -61,7 +61,7 @@
                 android:text="LISTVIEW"
                 android:textColor="@color/white"
                 android:textColorHint="@color/black"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.622"
 
@@ -72,7 +72,7 @@
             <Button
                 android:id="@+id/bntProfile"
                 android:layout_width="318dp"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="20dp"
@@ -82,7 +82,7 @@
                 android:text="PROFILE"
                 android:textColor="@color/white"
                 android:textColorHint="@color/black"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.621"
                 app:layout_constraintStart_toStartOf="parent"
@@ -90,19 +90,39 @@
                 tools:ignore="MissingConstraints" />
 
             <Button
-                android:id="@+id/bntcancel"
+                android:id="@+id/bntlvdesign"
                 android:layout_width="316dp"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="30dp"
                 android:background="@drawable/button_bg"
                 android:backgroundTint="#03A9F4"
                 android:fontFamily="@font/nabila"
-                android:text="CANCEL"
+                android:text="LISTVIEW_DESIGN"
                 android:textColor="@color/white"
                 android:textColorHint="@color/black"
-                android:textSize="24sp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.767"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bntLoginn"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/bntcanner"
+                android:layout_width="316dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/button_bg"
+                android:backgroundTint="#03A9F4"
+                android:fontFamily="@font/nabila"
+                android:text="CANNER"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.767"
                 app:layout_constraintStart_toStartOf="parent"
