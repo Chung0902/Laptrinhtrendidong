@@ -7,8 +7,10 @@ public class Sanpham {
     private String mSoluong;
     private String mGiatien;
 
+    public Sanpham() {
+    }
 
-    public Sanpham( String mTensanpham, String mMota, String mSoluong, String mGiatien) {
+    public Sanpham(String mTensanpham, String mMota, String mSoluong, String mGiatien) {
         this.mTensanpham = mTensanpham;
         this.mMota = mMota;
         this.mSoluong = mSoluong;
@@ -24,6 +26,7 @@ public class Sanpham {
     }
 
     public int getmID() {
+
         return mID;
     }
 
