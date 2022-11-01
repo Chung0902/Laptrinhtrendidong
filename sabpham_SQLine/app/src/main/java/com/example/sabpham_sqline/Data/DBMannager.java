@@ -2,10 +2,14 @@ package com.example.sabpham_sqline.Data;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import com.example.sabpham_sqline.Model.Sanpham;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class DBMannager extends SQLiteOpenHelper {
 
@@ -16,25 +20,24 @@ public class DBMannager extends SQLiteOpenHelper {
     private static final String MOTA="mota";
     private static final String SOLUONG="soluong";
     private static final String GIATIEN="giatien";
-    private static final int VERSION;
+    private static int VERSION = 1;
 
-    static {
-        VERSION = 1;
-    }
+    private Context context;
 
+    private String SQLQuery = "CREATE TABLE " +TABLE_NAME+" ("+
+            ID +" integer primary key, "+
+            TENSANPHAM + " TEXT, "+
+            MOTA + " TEXT, "+
+            SOLUONG + " TEXT, "+
+            GIATIEN + " TEXT)";
 
     public DBMannager(Context context) {
         super(context, DATABASE_NAME, null, VERSION);
+        this.context=context;
     }
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        String SQLQuery = "CREATE TABLE " + TABLE_NAME + "(" +
-                ID + " integer primary key, " +
-                TENSANPHAM + " TEXT, " +
-                MOTA + " TEXT, " +
-                SOLUONG + " TEXT, " +
-                GIATIEN + " TEXT)";
         sqLiteDatabase.execSQL(SQLQuery);
     }
 
@@ -53,5 +56,43 @@ public class DBMannager extends SQLiteOpenHelper {
 
         db.insert(TABLE_NAME, null, values);
         db.close();
+    }
+
+    public List<Sanpham>getAllSanpham(){
+        List<Sanpham> listSanpham = new ArrayList<>();
+
+        String selectQuery = "SELECT * FROM " + TABLE_NAME;
+
+        SQLiteDatabase db=this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery,null);
+        if(cursor.moveToFirst()){
+            do{
+                Sanpham sanpham = new Sanpham();
+                sanpham.setmID(cursor.getInt(0));
+                sanpham.setmTensanpham(cursor.getString(1));
+                sanpham.setmMota(cursor.getString(2));
+                sanpham.setmSoluong(cursor.getString(3));
+                sanpham.setmGiatien(cursor.getString(4));
+                listSanpham.add(sanpham);
+
+            }while (cursor.moveToNext());
+        }
+        db.close();
+    return listSanpham;
+    }
+
+    public int updateSanpham(Sanpham sanpham) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(TENSANPHAM, sanpham.getmTensanpham());
+        contentValues.put(MOTA, sanpham.getmMota());
+        contentValues.put(SOLUONG, sanpham.getmSoluong());
+        contentValues.put(GIATIEN, sanpham.getmGiatien());
+        return db.update(TABLE_NAME, contentValues, ID+"=?", new String[]{String.valueOf(sanpham.getmID())});
+    }
+
+    public int delecteSanpham(int id){
+        SQLiteDatabase db = this.getWritableDatabase();
+        return db.delete(TABLE_NAME,ID+"=?",new String[]{String.valueOf(id)});
     }
 }
