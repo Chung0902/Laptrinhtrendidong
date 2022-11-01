@@ -14,37 +14,47 @@
         android:theme="@style/Theme.Baitap_giuaky"
         tools:targetApi="31">
         <activity
-            android:name=".DetailActivity_4"
+            android:name=".activity.SQLite_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.DetailActivity_4"
             android:exported="false" />
         <activity
-            android:name=".DetailActivity_3"
+            android:name=".activity.DetailActivity_3"
             android:exported="false" />
         <activity
-            android:name=".DetailActivity_2"
+            android:name=".activity.DetailActivity_2"
             android:exported="false" />
         <activity
-            android:name=".DetailActivity_1"
+            android:name=".activity.DetailActivity_1"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
+            android:name=".activity.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".DetailActivity"
+            android:name=".activity.DetailActivity"
             android:exported="false" />
         <activity
-            android:name=".ListViewActivity"
+            android:name=".activity.ListViewActivity"
             android:exported="false" />
         <activity
-            android:name=".HomepageActivity"
+            android:name=".activity.HomepageActivity"
             android:exported="false" />
         <activity
-            android:name=".SignupActivity"
+            android:name=".activity.SignupActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".activity.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
