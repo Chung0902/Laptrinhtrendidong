@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.baitap_giuaky.R;
 import com.example.baitap_giuaky.adapter.CustomAdapter;
@@ -48,6 +49,7 @@ public class SQLite_Activity extends AppCompatActivity {
             public void onClick(View view) {
                 Sanpham sanpham = createSanpham();
                 if (sanpham != null) {
+                    Toast.makeText(SQLite_Activity.this, "Lưu thành công", Toast.LENGTH_SHORT).show();
                     dbMannager.addSanpham(sanpham);
                 }
                 sanphamList.clear();
@@ -83,12 +85,14 @@ public class SQLite_Activity extends AppCompatActivity {
                 sanpham.setmGiatien(edtGiatien.getText()+"");
                 int result = dbMannager.updateSanpham(sanpham);
                 if(result>0){
+                    Toast.makeText(SQLite_Activity.this, "Cập nhật thành công", Toast.LENGTH_SHORT).show();
                     sanphamList.clear();
                     sanphamList.addAll(dbMannager.getAllSanpham());
                     customAdapter.notifyDataSetChanged();
                     btnSave.setEnabled(true);
                     btnUpdate.setEnabled(false);
                 }else{
+                    Toast.makeText(SQLite_Activity.this, "Cập nhật không thành công", Toast.LENGTH_SHORT).show();
                     btnSave.setEnabled(true);
                     btnUpdate.setEnabled(false);
                 }
@@ -106,6 +110,7 @@ public class SQLite_Activity extends AppCompatActivity {
                 sanpham.setmGiatien(edtGiatien.getText()+"");
                 int result = dbMannager.delecteSanpham(sanpham.getmID());
                 if(result>0){
+                    Toast.makeText(SQLite_Activity.this, "Xóa thành công", Toast.LENGTH_SHORT).show();
                     sanphamList.clear();
                     sanphamList.addAll(dbMannager.getAllSanpham());
                     customAdapter.notifyDataSetChanged();
@@ -113,6 +118,7 @@ public class SQLite_Activity extends AppCompatActivity {
                     btnDelete.setEnabled(false);
                     btnUpdate.setEnabled(false);
                 }else{
+                    Toast.makeText(SQLite_Activity.this, "Xóa không thành công", Toast.LENGTH_SHORT).show();
                     btnSave.setEnabled(true);
                     btnDelete.setEnabled(false);
                     btnUpdate.setEnabled(false);
