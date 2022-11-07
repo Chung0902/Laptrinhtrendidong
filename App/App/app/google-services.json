@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "203459140756",
+    "project_id": "apptonghop-a0a96",
+    "storage_bucket": "apptonghop-a0a96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203459140756:android:678a50a82a301a346ee881",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203459140756-v8f2ui2tpqifninr4u529ggjkj8mul6s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZIjg1Y9IQCKsUjLBduhTVIvjtApCzlUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203459140756-v8f2ui2tpqifninr4u529ggjkj8mul6s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

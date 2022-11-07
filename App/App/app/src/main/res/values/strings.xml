@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">App</string>
+    <string name="action_home">Favorite</string>
+    <string name="action_favorite">Home</string>
+    <string name="action_profile">My Page</string>
+    <string name="action_new">New Fashion</string>
+</resources>

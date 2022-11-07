@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#044455 "
+    tools:context=".FashionListActivity">
+
+
+  <TextView
+      android:id="@+id/textViewTen"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="60dp"
+      android:layout_marginTop="25dp"
+      android:fontFamily="@font/aldrich"
+      android:text="Ten"
+      android:textColor="#fff "
+      android:textSize="27dp"
+      android:textStyle="bold" />
+
+  <TextView
+      android:id="@+id/textViewMota"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/textViewTen"
+      android:layout_marginLeft="60dp"
+      android:text="Mo ta"
+      android:textColor="#f6e9d7"
+      android:textSize="12dp" />
+
+  <TextView
+      android:id="@+id/textViewTien"
+      android:layout_width="70dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/textViewMota"
+      android:layout_marginLeft="60dp"
+      android:layout_marginTop="7dp"
+      android:background="@drawable/style_border_tien"
+      android:fontFamily="serif-monospace"
+      android:gravity="center"
+      android:text="Tien"
+      android:textColor="#fff"
+      android:textSize="20dp"
+      android:textStyle="bold" />
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="40dp"
+      android:layout_marginLeft="230dp"
+      android:layout_marginTop="50dp"
+      android:src="@drawable/ic_shopping" />
+</RelativeLayout>
