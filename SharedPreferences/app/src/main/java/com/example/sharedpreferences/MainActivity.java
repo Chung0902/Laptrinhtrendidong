@@ -2,6 +2,7 @@ package com.example.sharedpreferences;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     CheckBox cbRemember;
 
     SharedPreferences sharedPreferences;
+    private Button btnDangnhap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +64,17 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        btnDangnhap = (Button) findViewById(R.id.buttonXacnhan);
+
+        btnDangnhap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ListViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void AnhXa(){
