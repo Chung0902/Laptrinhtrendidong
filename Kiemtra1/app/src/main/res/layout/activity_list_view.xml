@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nenxanh1"
+    tools:context=".ListViewActivity">
+
+    <ListView
+        android:id="@+id/listviewCaSi"
+        android:layout_width="412dp"
+        android:layout_height="514dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="-1dp">
+
+
+    </ListView>
+
+    <Button
+        android:id="@+id/buttontve"
+        android:layout_width="188dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/input_bg"
+        android:fontFamily="@font/abc"
+        android:text="Trở về"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listviewCaSi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
